@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --yes)",
+      "Read(//c/Users/yykkm/Desktop/PJ/**)",
+      "Bash(npx create-next-app@latest jiro-guide --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --yes)",
+      "Bash(cp -r \"C:/Users/yykkm/Desktop/PJ/jiro-guide/\"* \"C:/Users/yykkm/Desktop/PJ/Jiro_training/\")",
+      "Bash(cp \"C:/Users/yykkm/Desktop/PJ/jiro-guide/.gitignore\" \"C:/Users/yykkm/Desktop/PJ/Jiro_training/\")",
+      "Bash(cp -r \"C:/Users/yykkm/Desktop/PJ/jiro-guide/node_modules\" \"C:/Users/yykkm/Desktop/PJ/Jiro_training/\")",
+      "Bash(rm -rf \"C:/Users/yykkm/Desktop/PJ/jiro-guide\")",
+      "Bash(npm install:*)",
+      "mcp__90f8f1db-4e3c-4bb0-80cc-9d608175af27__get_cost",
+      "mcp__90f8f1db-4e3c-4bb0-80cc-9d608175af27__confirm_cost",
+      "mcp__90f8f1db-4e3c-4bb0-80cc-9d608175af27__create_project",
+      "mcp__90f8f1db-4e3c-4bb0-80cc-9d608175af27__get_project_url",
+      "mcp__90f8f1db-4e3c-4bb0-80cc-9d608175af27__get_publishable_keys",
+      "mcp__90f8f1db-4e3c-4bb0-80cc-9d608175af27__apply_migration",
+      "mcp__90f8f1db-4e3c-4bb0-80cc-9d608175af27__execute_sql",
+      "Bash(npm run:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(python make_template.py)",
+      "WebSearch",
+      "Bash(npx tsc:*)",
+      "Bash(node -e \"require\\('dotenv'\\).config\\({path:'.env.local'}\\);['NEXT_PUBLIC_SUPABASE_URL','SUPABASE_SERVICE_ROLE_KEY','RESEND_API_KEY','NOTIFY_TO_EMAIL','NOTIFY_FROM_EMAIL'].forEach\\(k=>console.log\\(k+': '+\\(process.env[k]?'OK \\('+process.env[k].length+' chars\\)':'MISSING'\\)\\)\\)\")",
+      "Bash(node -e \"console.log\\(require\\('crypto'\\).randomBytes\\(32\\).toString\\('hex'\\)\\)\")",
+      "Bash(node -e ':*)",
+      "Bash(node -e \"console.log\\(require\\('crypto'\\).randomBytes\\(16\\).toString\\('base64'\\).replace\\(/[+/=]/g,''\\)\\)\")"
+    ]
+  }
+}

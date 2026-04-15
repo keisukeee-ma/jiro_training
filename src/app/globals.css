@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --color-jiro-yellow: #f5c518;
+  --color-jiro-yellow-light: #fef9e7;
+  --color-jiro-dark: #1a1a1a;
+  --color-jiro-gray: #6b7280;
+  --color-jiro-border: #e5e7eb;
+}
+
+@theme inline {
+  --color-jiro-yellow: var(--color-jiro-yellow);
+  --color-jiro-yellow-light: var(--color-jiro-yellow-light);
+  --color-jiro-dark: var(--color-jiro-dark);
+  --color-jiro-gray: var(--color-jiro-gray);
+  --color-jiro-border: var(--color-jiro-border);
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #1a1a1a;
+  background: #ffffff;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out both;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
