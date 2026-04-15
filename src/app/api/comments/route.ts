@@ -123,8 +123,10 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 
-  // 運営Gmailへ通知 (fire-and-forget: 失敗してもコメント登録自体は成功)
-  void sendNewCommentNotification({
+  // 運営Gmailへ通知
+  // 注意: Vercel のサーバーレス関数では void (fire-and-forget) は実行されずに終わるため
+  // await する。notify.ts 側で try/catch しているのでここで失敗することはない。
+  await sendNewCommentNotification({
     shopName: shop.name,
     slug: shop.slug,
     page: page ?? "info",
